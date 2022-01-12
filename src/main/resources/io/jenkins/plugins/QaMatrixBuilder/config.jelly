@@ -1,0 +1,27 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <f:entry title="Token" field="Token">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="Report Name" field="ReportName">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="Project ID" field="ProjectID">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="Project Name" field="ProjectName">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="App Version" field="AppVersion">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="Environment" field="Environment">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="File Location" field="FileLocation">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="Report Type" field="Type">
+        <f:textbox />
+    </f:entry>
+</j:jelly>
