@@ -9,6 +9,12 @@ import hudson.model.Run;
 import hudson.model.TaskListener;
 import hudson.tasks.Builder;
 import hudson.tasks.BuildStepDescriptor;
+
+// import hudson.Extension;
+// import hudson.model.AbstractDescribableImpl;
+// import hudson.model.Descriptor;
+
+
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
 
@@ -96,8 +102,8 @@ public class QaMatrixBuilder extends Builder implements SimpleBuildStep {
     public void postReport(TaskListener listener) throws IOException,
             InterruptedException {
         
-        // String url = "https://qa-matrix-v2.xapiens.id/api/v1/report/"+this.getType()+"/store";
-        String url = "http://localhost:3001/api/v1/report/"+this.getType()+"/store";
+        String url = "https://qa-matrix-v2.xapiens.id/api/v1/report/"+this.getType()+"/store";
+        // String url = "http://localhost:3001/api/v1/report/"+this.getType()+"/store";
         
         String boundary = "-------------oiawn4tp89n4e9p5";
         Map<Object, Object> data = new HashMap<>();
